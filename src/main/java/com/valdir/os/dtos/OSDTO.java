@@ -84,8 +84,8 @@ public class OSDTO implements Serializable {
 		this.observacoes = observacoes;
 	}
 
-	public Integer getStatus() {
-		return status;
+	public Status getStatus() {
+		return Status.toEnum(this.status);
 	}
 
 	public void setStatus(Integer status) {
